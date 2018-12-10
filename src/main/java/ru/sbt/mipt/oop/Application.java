@@ -20,7 +20,6 @@ public class Application {
         EventsManager eventsManager = context.getBean(EventsManager.class);
 
         SmartHome smartHome = smartHomeLoader.loadSmartHome();
-
         EventsLoader.runEvents(smartHome, eventsManager);
     }
 }

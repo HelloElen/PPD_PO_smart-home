@@ -8,11 +8,11 @@ import ru.sbt.mipt.oop.components.SmartHome;
 import ru.sbt.mipt.oop.observers.EventsManager;
 
 public class EventsLoader {
-    public static void runEvents (SmartHome smartHome, EventsManager eventManager) {
-        eventManager.addEventProcessor(new LightsEventProcessor());
-        eventManager.addEventProcessor(new DoorEventProcessor());
-        eventManager.addEventProcessor(new AlarmEventProcessor());
-        eventManager.addEventProcessor(new HallDoorEventProcessor());
-        eventManager.runEventsCycle(smartHome);
+    public static void runEvents (SmartHome smartHome, EventsManager eventsManager) {
+        eventsManager.addEventProcessor(new LightsEventProcessor());
+        eventsManager.addEventProcessor(new DoorEventProcessor());
+        eventsManager.addEventProcessor(new AlarmEventProcessor());
+        eventsManager.addEventProcessor(new HallDoorEventProcessor());
+        eventsManager.runEventsCycle(smartHome);
     }
 }
