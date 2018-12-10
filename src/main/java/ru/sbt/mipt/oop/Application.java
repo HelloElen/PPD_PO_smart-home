@@ -38,5 +38,4 @@ public class Application {
         eventManager.addEventProcessor(new HallDoorEventProcessor());
         eventManager.runEventsCycle(smartHome);
     }
-
 }
